@@ -13,8 +13,15 @@ const theme = {
   },
   fonts: {
     primary: {
-      family: "Source Sans Pro, sans-serif",
+      family: "Times, sans-serif",
       weight: 400
+    },
+    cards: {
+      family: "arial, sans-serif",
+      weight: 800,
+      size: "4.8em",
+      height: "2.5em",
+      width: "5.7em",
     }
   }
 };

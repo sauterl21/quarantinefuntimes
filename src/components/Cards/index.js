@@ -1,11 +1,15 @@
 import React from "react"
 // eslint-disable-next-line
-import { MButton, SButton } from "./styles"
+import { PButton, RButton, Description } from "./styles"
 
-export const MCard = () => (
-    <MButton>Memory</MButton>
+export const PCard = () => (
+    <form action="/poker" method="get">
+        <PButton type="submit">POKER</PButton>
+    </form>
 )
 
-export const SCard = () => (
-    <SButton>Speed</SButton>
+export const RCard = () => (
+    <form action="/roulette" method="get">
+        <RButton type="submit">ROULETTE</RButton>
+    </form>
 )

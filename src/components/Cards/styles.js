@@ -1,29 +1,49 @@
 import styled from "styled-components";
-import mem from "./images/Memory.png";
+import poker from "./images/poker.jpg"
+import roulette from "./images/roulette.jpg"
 
-export const MButton = styled.button`
-  width: 5em;
-  height: 3em;
-  color: black;
-  background-image: url(${mem});
+export const PButton = styled.button`
+  width: ${({ theme }) => theme.fonts.cards.width};
+  height: ${({ theme }) => theme.fonts.cards.height};
+  color: royalblue;
+  background-image: url(${poker});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
   justify-content: center;
   border-radius: 20px;
-  font-size: 7em;
-  font-family: fantasy, ${({ theme }) => theme.fonts.primary.family};
-  font-weight: ${({ theme }) => theme.fonts.primary.weight};
+  border-color: lightblue;
+  font-size: ${({ theme }) => theme.fonts.cards.size};
+  font-family: ${({ theme }) => theme.fonts.primary.family};
+  font-weight: ${({ theme }) => theme.fonts.cards.weight};
   align-self: flex-end;
 `;
 
-export const SButton = styled.button`
-  width: 5em;
-  height: 3em;
-  color: rebeccapurple;
-  background-color: seagreen;
+export const RButton = styled.button`
+  width: ${({ theme }) => theme.fonts.cards.width};
+  height: ${({ theme }) => theme.fonts.cards.height};
+  color: royalblue;
+  background-image: url(${roulette});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
   justify-content: center;
   border-radius: 20px;
-  font-size: 7em;
-  font-family: fantasy, ${({ theme }) => theme.fonts.primary.family};
-  font-weight: ${({ theme }) => theme.fonts.primary.weight};
+  border-color: lightblue;
+  font-size: ${({ theme }) => theme.fonts.cards.size};
+  font-family: ${({ theme }) => theme.fonts.primary.family};
+  font-weight: ${({ theme }) => theme.fonts.cards.weight};
+  align-self: flex-end;
 `;
 
-export default MButton;
+export const Description = styled.text`
+  color: rebeccapurple;
+  justify-content: center;
+  font-size: 4.2em;
+  font-family: ${({ theme }) => theme.fonts.primary.family};
+  font-weight: ${({ theme }) => theme.fonts.cards.weight};
+`;
+
+export default Description;
